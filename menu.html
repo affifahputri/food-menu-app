@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Makanan - Food Menu App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav>
-    <h2>Food Menu</h2>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="contact.html">Kontak</a>
+    <div class="nav-container">
+      <h2><i class="fa-solid fa-utensils"></i> Food Menu</h2>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="contact.html">Kontak</a>
+      </div>
     </div>
   </nav>
 
@@ -20,15 +28,29 @@
   <div class="menu-container">
 
     <div class="card">
-      <img src="images/nasi-goreng.jpg">
-      <h3>Nasi Goreng</h3>
-      <p>Rp 15.000</p>
+      <div class="card-img-wrapper">
+        <img src="img/nasgor.jpeg" alt="Nasi Goreng">
+        <span class="badge">Diskon</span>
+      </div>
+      <div class="card-info">
+        <h3>Nasi Goreng Spesial</h3>
+        <p class="desc">Nasi goreng lezat dengan bumbu rahasia pilihan, ditaburi suwiran ayam dan telur mata sapi.</p>
+        <p class="price">Rp 15.000</p>
+        <button class="btn-sm"><i class="fa-solid fa-cart-plus"></i> Pesan</button>
+      </div>
     </div>
 
     <div class="card">
-      <img src="images/mie-ayam.jpg">
-      <h3>Mie Ayam</h3>
-      <p>Rp 12.000</p>
+      <div class="card-img-wrapper">
+        <img src="img/Mie Ayam Bakso.jpeg" alt="Mie Ayam">
+        <span class="badge hot">Pedas</span>
+      </div>
+      <div class="card-info">
+        <h3>Mie Ayam Bakso</h3>
+        <p class="desc">Mie ayam yang kenyal disajikan dengan kuah gurih, potongan ayam, dan bakso daging sapi asli.</p>
+        <p class="price">Rp 13.000</p>
+        <button class="btn-sm"><i class="fa-solid fa-cart-plus"></i> Pesan</button>
+      </div>
     </div>
 
   </div>
